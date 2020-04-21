@@ -1,4 +1,4 @@
-def horizontal_rotation(revnum, stack_step, step_cnt):
+def panning_rotation(panning_step, stack_step, step_cnt):
   from time import sleep
   import RPi.GPIO as GPIO
   import os
@@ -14,13 +14,11 @@ def horizontal_rotation(revnum, stack_step, step_cnt):
   GPIO.setup(DIR, GPIO.OUT)
   GPIO.setup(STEP, GPIO.OUT)
   GPIO.output(DIR, CW)
-
-  step_count = SPR
   delay = .005
 
 
-  for x in range(revnum):
-    for y in range(step_count):
+  for x in range(panning_step):
+    for y in range(SPR):
       GPIO.output(STEP, GPIO.HIGH)
       sleep(delay)
       GPIO.output(STEP, GPIO.LOW)
