@@ -12,14 +12,14 @@ def tilting(stack_step, stack_step_count):
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(DIR, GPIO.OUT)
 	GPIO.setup(STEP, GPIO.OUT)
-	GPIO.output(DIR,CCW)
-
+	
 	delay = 0.0001
 	sum=0
 	
 	panning_step=[40, 40, 40]
 	tilting_step=[300, 300, 300]
 	
+	GPIO.output(DIR,CCW)
 	for x in range(len(tilting_step)):
 		for y in range(tilting_step[x]):
 			GPIO.output(STEP,GPIO.HIGH)
@@ -28,9 +28,9 @@ def tilting(stack_step, stack_step_count):
 			sleep(delay)
 		sum+=tilting_step[x]
 		sleep(2)
-		
  		panning.panning_rotation(panning_step[x], stack_step, stack_step_count)
   		sleep(1)
+		
   		DIR = 20
   		STEP = 21
   		GPIO.setmode(GPIO.BCM)
