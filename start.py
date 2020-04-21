@@ -17,6 +17,7 @@ GPIO.setup(STEP, GPIO.OUT)
 step_count=SPR
 delay=0.0001
 
+#Get keyboard input
 class _Getch:
         def __init__(self):
                 import tty, sys
@@ -37,7 +38,7 @@ print("Press 'w' to forward and press 's' to backward \n")
 print("Press 'a'to set the point begin press 'd' to set the point end\n")
 print("Press 'q' to finish\n")
 while 1:
-        a = getch()
+        a = getch()   
         if(a == "w"):
                 GPIO.output(DIR,CCW)
 
@@ -46,19 +47,17 @@ while 1:
                         sleep(delay)
                         GPIO.output(STEP, GPIO.LOW)
                         sleep(delay)
-
-
                 count = count + 500
+        
         if(a == "s"):
                 GPIO.output(DIR,CW)
-
                 for x in range(step_count):
                         GPIO.output(STEP, GPIO.HIGH)
                         sleep(delay)
                         GPIO.output(STEP, GPIO.LOW)
                         sleep(delay)
-
                 count = count - 500
+                
         if(a == "a"):
                 begin = count
         if(a == "d"):
@@ -78,6 +77,7 @@ if(end > begin):
 print("\n\ndistance: {}mm".format((end-begin)/250))
 #how many steps from begin to end
 stack_step = input("\nstep: ")
+#how many microsteps are needed for each stack
 microsteps  = (end-begin)/stack_step
 GPIO.cleanup()
 tilting.tilt(stack_step, microsteps)
