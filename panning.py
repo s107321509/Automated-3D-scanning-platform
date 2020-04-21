@@ -1,4 +1,4 @@
-def panning_rotation(panning_step, stack_step, stack_step_count):
+def panning_rotation(panning_step, stack_step, microsteps):
   from time import sleep
   import RPi.GPIO as GPIO
   import os
@@ -13,10 +13,11 @@ def panning_rotation(panning_step, stack_step, stack_step_count):
   GPIO.setmode(GPIO.BCM)
   GPIO.setup(DIR, GPIO.OUT)
   GPIO.setup(STEP, GPIO.OUT)
-  GPIO.output(DIR, CW)
+  
   delay = .005
   step_count=SPR
-
+  
+  GPIO.output(DIR, CW)
   for x in range(panning_step):
     for y in range(step_count):
       GPIO.output(STEP, GPIO.HIGH)
@@ -24,7 +25,7 @@ def panning_rotation(panning_step, stack_step, stack_step_count):
       GPIO.output(STEP, GPIO.LOW)
       sleep(delay)
     sleep(2)
-    stack.photo_stack(stack_step, stack_step_count)
+    stack.photo_stack(stack_step, microsteps)
     sleep(1)
     
     DIR =18 
