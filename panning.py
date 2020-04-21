@@ -25,8 +25,8 @@ def panning_rotation(panning_step, stack_step, stack_step_count):
       sleep(delay)
     sleep(2)
     stack.photo_stack(stack_step, stack_step_count)
-    #os.system('./run.sh')
     sleep(1)
+    
     DIR =18 
     STEP =14
     GPIO.setmode(GPIO.BCM)
