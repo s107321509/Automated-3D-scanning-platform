@@ -1,4 +1,4 @@
-def turn(stack_step, step_cnt):
+def tilting(stack_step, step_cnt):
 	from time import sleep
 	import RPi.GPIO as GPIO
 	import os
