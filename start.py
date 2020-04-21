@@ -1,7 +1,7 @@
 from time import sleep
 import RPi.GPIO as GPIO
 import os
-import for3dsom
+import tilting
 #CW = forward ,CCW = backward
 #1250 = 5mm
 DIR=5
@@ -77,8 +77,10 @@ if(end > begin):
 
 print("\n\ndistance: {}mm".format((end-begin)/250))
 #how many steps from begin to end
-step = input("\nstep: ")
+stack_step = input("\nstep: ")
 
-forward = (end-begin)/step
+stack_step_count = (end-begin)/step
+
 GPIO.cleanup()
-for3dsom.turn(step, forward)
+
+tilting.turn(stack_step, stack_step_count)
