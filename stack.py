@@ -22,7 +22,7 @@ def photo_stack(stack_step, stack_step_count):
 			sleep(delay)
 			GPIO.output(STEP, GPIO.LOW)
         		sleep(delay)
-		os.system('./run.sh')
+		os.system('./shoot.sh')
 		count+=stack_step_count 
 		sleep(1)
 		
