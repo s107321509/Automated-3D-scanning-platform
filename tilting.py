@@ -1,4 +1,4 @@
-def tilting(stack_step, stack_step_count):
+def tilting(stack_step, microsteps):
 	from time import sleep
 	import RPi.GPIO as GPIO
 	import os
@@ -28,7 +28,7 @@ def tilting(stack_step, stack_step_count):
 			sleep(delay)
 		sum+=tilting_step[x]
 		sleep(2)
- 		panning.panning_rotation(panning_step[x], stack_step, stack_step_count)
+ 		panning.panning_rotation(panning_step[x], stack_step, microsteps)
   		sleep(1)
 		
   		DIR = 20
