@@ -40,7 +40,7 @@ $ sudo apt-get install python2.7
 
 The specimen shooting process can be roughly divided into the following steps：
 
-1.The user can define any number of tilt angles and the number of steps of a horizontal rotation, as follows, which is defined as the horizontal turntable shooting 40 surround images per revolution, and the tilt axis moves 300 microsteps each time, divided into three Shoot from different angles.
+1.The user can define any number of tilt angles and the number of steps of a horizontal rotation　in the `tilting.py` , as follows, which is defined as the horizontal turntable shooting 40 surround images per revolution, and the tilt axis moves 300 microsteps each time, divided into three Shoot from different angles.
 
 ```sh
 panning_step = [40,40,40]
