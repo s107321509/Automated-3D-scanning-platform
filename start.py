@@ -19,14 +19,6 @@ delay=0.0001
 
 class _Getch:
         def __init__(self):
-                try:
-                   self.impl = _GetchWindows()
-                except ImportError:
-                   self.impl = _GetchUnix()
-        def __call__(self): return self.impl()
-
-class _GetchUnix:
-        def __init__(self):
                 import tty, sys
         def __call__(self):
                 import sys, tty, termios
@@ -38,14 +30,6 @@ class _GetchUnix:
                 finally:
                    termios.tcsetattr(fd,termios.TCSADRAIN, old_settings)
                 return ch
-
-class _GetchWindows:
-        def __init__(self):
-                import msvcrt
-        def __call__(self):
-                import msvcrt
-                return msvcrt.getch()
-
 getch = _Getch()
 count = 0
 #doing back or forward
@@ -96,29 +80,5 @@ print("\n\ndistance: {}mm".format((end-begin)/250))
 step = input("\nstep: ")
 
 forward = (end-begin)/step
-#GPIO.output(DIR,CCW)
-#for i in range(step):
-        #forward = (end - begin)/step
-        #for x in range(forward):
-                #GPIO.output(STEP, GPIO.HIGH)
-                #sleep(delay)
-                #GPIO.output(STEP, GPIO.LOW)
-                #sleep(delay)
-	#sleep(3)
-        #os.system('./run.sh')
-#sleep(1)
-#back to origin
-#GPIO.output(DIR,CW)
-#for x in range(end-begin):
-        #GPIO.output(STEP, GPIO.HIGH)
-        #sleep(delay)
-        #GPIO.output(STEP, GPIO.LOW)
-        #sleep(delay)
-
-#print("stack step count: {}".format(forward))
-#print("total stack distance: {}mm".format((end-begin)/250))
-#print("begin: {}mm".format(begin/250))
-#print("end: {}mm".format(end/250))
 GPIO.cleanup()
-#cmd = 'python turn3dsom.py'
 for3dsom.turn(step, forward)
