@@ -12,11 +12,11 @@ capture() {
     mkdir -p $FOLDER
     echo @___folder: [$FOLDER]
     echo @____image: [$IMG]
-    # 照相命名并分类保存
+    # 照相命名並分類保存
     gphoto2 --capture-image --filename $IMG
     # echo  'hello(date +%s)' > $IMG && mv $IMG $FOLDER
     #read -t 1 || return
     # echo sleep 3 seconds && sleep 3 && echo sleep done
 };
 
-capture # 持续拍照
+capture # 持續拍照
