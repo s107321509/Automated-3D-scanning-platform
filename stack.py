@@ -1,4 +1,4 @@
-def photo_stack(stack_step, stack_step_count):
+def photo_stack(stack_step, microsteps):
 	from time import sleep
 	import RPi.GPIO as GPIO
 	import os
@@ -17,7 +17,7 @@ def photo_stack(stack_step, stack_step_count):
 	
 	GPIO.output(DIR, CCW)
 	for i in range(stack_step):
-		for x in range(stack_step_count):
+		for x in range(microsteps):
 			GPIO.output(STEP, GPIO.HIGH)
 			sleep(delay)
 			GPIO.output(STEP, GPIO.LOW)
