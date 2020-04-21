@@ -2,7 +2,7 @@ def turn(stack_step, step_cnt):
 	from time import sleep
 	import RPi.GPIO as GPIO
 	import os
-	import cir
+	import panning
 
 	DIR = 20
 	STEP = 21
@@ -16,17 +16,20 @@ def turn(stack_step, step_cnt):
 
 	delay = 0.0001
 	sum=0
-	horizontal_step=[10, 10, 10]
-	step_count=[300, 300, 350]
+	
+	panning_step=[40, 40, 40]
+	tilting_step=[300, 300, 300]
+	
 	for x in range(3):
-		for y in range(step_count[x]):
+		for y in range(tilting_step[x]):
 			GPIO.output(STEP,GPIO.HIGH)
 			sleep(delay)
 			GPIO.output(STEP, GPIO.LOW)
 			sleep(delay)
-		sum+=step_count[x]
+		sum+=tilting_step[x]
 		sleep(2)
- 		cir.horizontal_rotation(horizontal_step[x], stack_step, step_cnt)
+		
+ 		panning.panning_rotation(panning_step[x], stack_step, step_cnt)
   		sleep(1)
   		DIR = 20
   		STEP = 21
