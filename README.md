@@ -46,7 +46,7 @@ The specimen shooting process can be roughly divided into the following steps：
 panning_step = [40,40,40]
 tilting_step = [300,300,300]
 ```
-2.Control the movement of the stacking platform to find the clear range of the front and back focus of the subject. Use the method of reading the keyboard keys to define w as forward, s as backward, a and d to define the shooting start and end positions, and finally press the q key to complete the parameters set up.
+2.Use `start.py` to control the movement of the stacking platform to find the clear range of the front and back focus of the subject. Use the method of reading the keyboard keys to define w as forward, s as backward, a and d to define the shooting start and end positions, and finally press the q key to complete the parameters set up.
 
 3.After each step of the horizontal turntable, the stacking program is called. After each step of the stack, the camera program is executed to automatically control the camera to shoot the specimen.
 
