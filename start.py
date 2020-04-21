@@ -78,9 +78,6 @@ if(end > begin):
 print("\n\ndistance: {}mm".format((end-begin)/250))
 #how many steps from begin to end
 stack_step = input("\nstep: ")
-
 stack_step_count = (end-begin)/step
-
 GPIO.cleanup()
-
 tilting.turn(stack_step, stack_step_count)
