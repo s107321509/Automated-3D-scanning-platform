@@ -1,4 +1,4 @@
-def tilting(stack_step, microsteps):
+def tilt(stack_step, microsteps):
 	from time import sleep
 	import RPi.GPIO as GPIO
 	import os
