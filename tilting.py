@@ -38,6 +38,7 @@ def tilt(stack_step, microsteps):
   		GPIO.setmode(GPIO.BCM)
   		GPIO.setup(DIR, GPIO.OUT)
   		GPIO.setup(STEP, GPIO.OUT)
+		
 	#back to tilting origin	
 	GPIO.output(DIR, CW)
 	for x in range(sum):
