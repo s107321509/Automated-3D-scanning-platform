@@ -16,7 +16,9 @@ def tilt(stack_step, microsteps):
 	delay = 0.0001
 	sum=0
 	
+	
 	panning_step=[40, 40, 40]
+	#define any number of tilt angles,each 100 microsteps is about 4.5 degrees
 	tilting_step=[300, 300, 300]
 	
 	GPIO.output(DIR,CCW)
