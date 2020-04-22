@@ -25,6 +25,7 @@ def panning_rotation(panning_step, stack_step, microsteps):
       GPIO.output(STEP, GPIO.LOW)
       sleep(delay)
     sleep(2)
+    #when each turntable rotates, execute the stack function
     stack.photo_stack(stack_step, microsteps)
     sleep(1)
     
