@@ -32,7 +32,7 @@ def tilt(stack_step, microsteps):
 		#accumulate microsteps of each tilting move,the parameters is used to return the origin of the tilt axis
 		sum+=tilting_step[x]
 		sleep(2)
-		#when the tilt axis moves by an angle, execute the horizontal axis function to turn the turntable
+		#when the tilt axis moves by an angle, execute the horizontal axis function to rotate the turntable
  		panning.panning_rotation(panning_step[x], stack_step, microsteps)
   		sleep(1)
 		
