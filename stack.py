@@ -22,10 +22,13 @@ def photo_stack(stack_step, microsteps):
 			sleep(delay)
 			GPIO.output(STEP, GPIO.LOW)
         		sleep(delay)
+		#execute shooting script
 		os.system('./shoot.sh')
+		#calculate how many microsteps the stack moves in total,and the parameter is used to return to the origin of the stack
 		count+=stack_step_count 
 		sleep(1)
-		
+	
+	#return to stack origin
 	GPIO.output(DIR,CW)
 	for x in range(count):
         	GPIO.output(STEP, GPIO.HIGH)
