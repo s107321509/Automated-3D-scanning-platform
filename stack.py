@@ -24,7 +24,7 @@ def photo_stack(stack_step, microsteps):
         		sleep(delay)
 		#execute shooting script
 		os.system('./shoot.sh')
-		#calculate how many microsteps the stack moves in total,and the parameter is used to return to the origin of the stack
+		#accumulate microsteps of each stack move,the parameters is used to return the stack origin
 		count+=stack_step_count 
 		sleep(1)
 	
