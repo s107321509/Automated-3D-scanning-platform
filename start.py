@@ -1,3 +1,8 @@
+#how many images are needed for each horizontal turn?
+panning_step=[40, 40, 40]
+#define any number of tilt angles,each 100 microsteps is about 4.5 degrees
+tilting_step=[300, 300, 300]
+
 from time import sleep
 import RPi.GPIO as GPIO
 import os
@@ -80,4 +85,4 @@ stack_step = input("\nstep: ")
 #how many microsteps are needed for each stack
 microsteps  = (end-begin)/stack_step
 GPIO.cleanup()
-tilting.tilt(stack_step, microsteps)
+tilting.tilt(panning_step, tilting_step, stack_step, microsteps)
