@@ -1,4 +1,4 @@
-def tilt(stack_step, microsteps):
+def tilt(panning_step, tilting_step, stack_step, microsteps):
 	from time import sleep
 	import RPi.GPIO as GPIO
 	import os
@@ -16,10 +16,6 @@ def tilt(stack_step, microsteps):
 	delay = 0.0001
 	sum=0
 	
-	#how many images are needed for each horizontal turn?
-	panning_step=[40, 40, 40]
-	#define any number of tilt angles,each 100 microsteps is about 4.5 degrees
-	tilting_step=[300, 300, 300]
 	
 	#the tilt axis moves to the tilt angle defined by tilting_step
 	GPIO.output(DIR,CCW)
