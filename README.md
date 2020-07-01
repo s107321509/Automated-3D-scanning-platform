@@ -1,5 +1,5 @@
 # 用於3D建模的自動拍攝平台
-
+![image](https://github.com/s107321509/Automatic-shooting-platform-for-3D-modeling/blob/master/%E4%BA%8C%E8%BB%B8%E5%B9%B3%E5%8F%B0.png)
 ## 目錄
 
 - [背景](#背景)
@@ -17,7 +17,6 @@
 使用此程序之前，您必須準備以下幾件事：
 
 1. 樹莓派
-![image](https://github.com/s107321509/Automatic-shooting-platform-for-3D-modeling/blob/master/raspberrypi.jpg)
 2. 3個步進電機
 3. 相機
 4. 馬達驅動
