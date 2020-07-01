@@ -19,11 +19,11 @@
 1. 樹莓派  
 ![image](https://github.com/s107321509/Automatic-shooting-platform-for-3D-modeling/blob/master/img/rpi.png)
 2. 3個步進電機  
-![image](https://github.com/s107321509/Automatic-shooting-platform-for-3D-modeling/blob/master/img/motor.png)
+![image]()
 3. 相機  
-![image](https://github.com/s107321509/Automatic-shooting-platform-for-3D-modeling/blob/master/img/camera.png)
+![image]()
 4. 馬達驅動  
-![image](https://github.com/s107321509/Automatic-shooting-platform-for-3D-modeling/blob/master/img/%E9%A6%AC%E9%81%94%E9%A9%85%E5%8B%95.png)
+![image]()
 5. 從[Openscan](https://www.thingiverse.com/thing:3050437)下載平台架構模型，然後使用3D打印將其打印出來  
 
 ## 安裝
