@@ -20,7 +20,7 @@
 2. 3個步進電機
 3. 相機
 4. 馬達驅動
-5. 從[Openscan]（https://www.thingiverse.com/thing:3050437）下載平台架構模型，然後使用3D打印將其打印出來
+5. 從[Openscan](https://www.thingiverse.com/thing:3050437)下載平台架構模型，然後使用3D打印將其打印出來
 
 ## 安裝
 
