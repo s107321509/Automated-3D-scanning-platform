@@ -17,7 +17,6 @@
 使用此程序之前，您必須準備以下幾件事：
 
 1. 樹莓派  
-![image](https://github.com/s107321509/Automatic-shooting-platform-for-3D-modeling/blob/master/img/rpi.png)
 2. 3個步進電機  
 3. 相機  
 4. 馬達驅動  
