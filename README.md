@@ -1,5 +1,5 @@
 # 自動化三維掃描平台
-![image](https://github.com/s107321509/Automatic-shooting-platform-for-3D-modeling/blob/master/img/%E4%BA%8C%E8%BB%B8%E5%B9%B3%E5%8F%B0.png)
+<img src="https://i.ibb.co/Qb9cCp0/lowcost3dscanner.png" alt="lowcost3dscanner" border="0">  
 ## 目錄
 
 - [背景](#背景)
