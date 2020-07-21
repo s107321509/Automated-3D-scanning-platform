@@ -1,10 +1,7 @@
 # 自動化三維掃描平台
 <img src="https://i.ibb.co/Qb9cCp0/lowcost3dscanner.png" alt="lowcost3dscanner" border="0">  
-## 目錄
 
-- [背景](#背景)
-- [安裝](#安裝)
-- [用法](#用法)
+## 序言
 
 
 ## 背景
