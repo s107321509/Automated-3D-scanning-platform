@@ -8,14 +8,15 @@
 
 使用此程序之前，您必須準備以下設備：
 1. Raspberry Pi    
-2. 高畫素單眼相機/*Canon EOS 650D  
+2. 高畫素單眼相機 (Canon EOS 650D)  
 3. NEMA17 步進馬達*3 (https://goods.ruten.com.tw/item/show?21405171072055&fbclid=IwAR1GomKSwFMTKWlX8ro5bkLu7ZaBOpcgn6ErBNjZy7c86bKhfIqxLVY3RmM)  
 4. 步進滑台 (https://goods.ruten.com.tw/item/show?21812802023245#info)  
 5. TB6600 三軸步進馬達驅動 (https://goods.ruten.com.tw/item/show?21820026614518)  
-6. 印出**OpenScan**開源零件(https://www.thingiverse.com/thing:3050437)  
+6. 印出**OpenScan**開源零件 (https://www.thingiverse.com/thing:3050437)  
 7. 電腦螢幕、鍵盤、滑鼠各1
-8. 杜邦線數條
-9. 電源供應器/*24V 5A
+8. 杜邦線數條 (公對公、公對母)
+9. 電源供應器 (24V 5A)  
+
 ## 三維掃描平台架構
 <img src="https://i.ibb.co/v4wT9J2/image.png" alt="image" border="0">
 
@@ -38,8 +39,11 @@
 <img src="https://i.ibb.co/kK9YR1V/image.png" alt="image" border="0">
 
 <img src="https://i.ibb.co/JrhQ14R/GPIO.png" alt="GPIO" border="0">
-## 安裝
 
+## 完整接線方式如下圖
+<img src="https://i.ibb.co/fGMJzcL/image.png" alt="image" border="0">
+
+## 安裝相依套建
 
 該項目使用gphoto2來控制相機拍照。使用前請確保已安裝此軟件。
 
@@ -52,7 +56,7 @@ $ sudo apt-get install gphoto2
 $ sudo apt-get install python2.7
 ```
 
-##  用法
+##  使用方法
 
 標本的拍攝過程大致可分為以下步驟：
 
