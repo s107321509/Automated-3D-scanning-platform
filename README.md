@@ -21,7 +21,7 @@
 
 ## 二軸平台
 二軸平台用來旋轉昆蟲標本，輔助相機拍攝標本各個角度的影像。由於國內還沒有相關應用，因此目前坊間尚無現成的二軸平台套件可以購買，而在國外有從事三維掃描相關單OpenScan，他們使用CAD軟體自行設計二軸機構，並將設計的模型檔在網路上公開下載，因此我們引用此開源機構，將零件由3D列印機印出，搭配兩顆型號為Nema17的步進馬達，將其組裝來作為我們的二軸平台。  
-<img src="https://i.ibb.co/j3zgYkc/image.png" alt="image" border="0">
+<img src="https://i.ibb.co/FmV7x3j/image.png" alt="image" border="0">
 
 ## 安裝
 
