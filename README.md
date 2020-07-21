@@ -34,9 +34,10 @@
 <img src="https://i.ibb.co/JrYSB5C/image.png" alt="image" border="0">
 
 ## 樹莓派與TB6600驅動器連接方法
-接著使用杜邦線將馬達驅動1~3軸訊號控制接口分別接到樹莓派GPIO上，我們可以在程式中自行定義不同的GPIO腳位來控制馬達。訊號控制接口由左而右為PUL+、PUL-、DIR+、DIR-、ENA+、ENA-，其中ENA+和ENA-接口可不接線，PUL是脈衝輸入，DIR為方向輸入。
-<img src="https://i.ibb.co/qx3BgTB/image.png" alt="image" border="0">  
-<img src="https://i.ibb.co/Cwxb0sT/GPIO.png" alt="GPIO" border="0">
+接著使用杜邦線將馬達驅動1~3軸訊號控制接口分別接到樹莓派GPIO上，我們可以在程式中自行定義不同的GPIO腳位來控制馬達。訊號控制接口由左而右為PUL+、PUL-、DIR+、DIR-、ENA+、ENA-，其中ENA+和ENA-接口可不接線，PUL是脈衝輸入，DIR為方向輸入，，GPIO連接方式如下表。
+<img src="https://i.ibb.co/Br78tS7/image.png" alt="image" border="0">
+
+<img src="https://i.ibb.co/JrhQ14R/GPIO.png" alt="GPIO" border="0">
 ## 安裝
 
 
