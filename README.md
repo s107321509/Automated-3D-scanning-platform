@@ -28,12 +28,17 @@
 
 <img src="https://i.ibb.co/TLvT8JP/image.png" alt="image" border="0">
 
-## 馬達連接到步進馬達驅動方法
+## 馬達與TB6600驅動器連接方法
 一般而言，大多數二相四線馬達的連接排線都由黑、綠、紅、藍四種顏色組成，依序表示 A+、A-、B+、B-，而上述線的定義為常規但並非絕對，我們可以經由檢測來確認。由於兩相的步進馬達由兩組線圈組成，因此四條線中每兩條為一組會互相導通，我們可以先用三用電表來判斷哪兩條線為一組，將其代表為 A+、A-，而另外兩條則為 B+、B-，若通電後馬達轉向與預期相反，則將其中一組線圈兩條線交互對調即可。確認完線的順序後，就可以將三顆步進馬達使用杜邦線分別接到驅動器上1~3軸馬達接口位置。黑色線接到 A+、綠色線接到 A-、紅色線接到 B+、藍色線接到 B-。  
 
 <img src="https://i.ibb.co/JrYSB5C/image.png" alt="image" border="0">
 
+## 樹莓派與TB6600驅動器連接方法
+接著使用杜邦線將馬達驅動1~3軸訊號控制接口分別接到樹莓派GPIO上，我們可以在程式中自行定義不同的GPIO腳位來控制馬達。訊號控制接口由左而右為PUL+、PUL-、DIR+、DIR-、ENA+、ENA-，其中ENA+和ENA-接口可不接線，PUL是脈衝輸入，DIR為方向輸入。
+<img src="https://i.ibb.co/qx3BgTB/image.png" alt="image" border="0">  
+<img src="https://i.ibb.co/Cwxb0sT/GPIO.png" alt="GPIO" border="0">
 ## 安裝
+
 
 該項目使用gphoto2來控制相機拍照。使用前請確保已安裝此軟件。
 
