@@ -4,7 +4,7 @@
 
   
 這是一個用於**Photogrammetry**的三維掃描平台，此平台以**低成本**的零組件所組成，可以用來**自動化完成三維建模所需的影像拍攝工作**。我們主要將其用於**昆蟲標本**三維掃描上，希望可以幫助國內數位標本由2D圖像展示轉為3D模型來瀏覽，讓使用者經由滑鼠旋轉3D模型來觀察整隻昆蟲。我們將平台組裝方式與使用到的原始碼在此開源，希望藉由開源可以讓各昆蟲博物館或相關單位引用此方法，來大量建置或是將我們的平台進行優化，我們非常樂意與各單位互相交流、討論，共同提升台灣數位標本3D化的程度。  
-<img src="https://i.ibb.co/Qb9cCp0/lowcost3dscanner.png" alt="lowcost3dscanner" border="0">  
+<img src="https://i.ibb.co/3vg2dZs/image.png" alt="image" border="0">
 
 使用此程序之前，您必須準備以下設備：
 1. Raspberry Pi    
@@ -12,16 +12,20 @@
 3. NEMA17 步進馬達*3 (https://goods.ruten.com.tw/item/show?21405171072055&fbclid=IwAR1GomKSwFMTKWlX8ro5bkLu7ZaBOpcgn6ErBNjZy7c86bKhfIqxLVY3RmM)  
 4. 步進滑台 (https://goods.ruten.com.tw/item/show?21812802023245#info)  
 5. TB6600 三軸步進馬達驅動 (https://goods.ruten.com.tw/item/show?21820026614518)  
-6. 印出[OpenScan]開源零件(https://www.thingiverse.com/thing:3050437)  
+6. 印出**OpenScan**開源零件(https://www.thingiverse.com/thing:3050437)  
 7. 電腦螢幕、鍵盤、滑鼠各1
 8. 杜邦線數條
 
 ## 三維掃描平台架構
-<img src="https://i.ibb.co/rQKBBwK/image.png" alt="image" border="0">  
+<img src="https://i.ibb.co/wh7kSrF/image.png" alt="image" border="0"> 
 
 ## 二軸平台
 二軸平台用來旋轉昆蟲標本，輔助相機拍攝標本各個角度的影像。由於國內還沒有相關應用，因此目前坊間尚無現成的二軸平台套件可以購買，而在國外有從事三維掃描相關單OpenScan，他們使用CAD軟體自行設計二軸機構，並將設計的模型檔在網路上公開下載，因此我們引用此開源機構，將零件由3D列印機印出，搭配兩顆型號為Nema17的步進馬達，將其組裝來作為我們的二軸平台。  
-<img src="https://i.ibb.co/FmV7x3j/image.png" alt="image" border="0">
+<img src="https://i.ibb.co/j8bxpjC/image.png" alt="image" border="0">
+
+## 堆疊平台
+由於微距攝影有較淺的景深，使用單一攝影參數拍攝一張影像無法讓整個昆蟲標本都能清晰呈現，因此對於立體有厚度的昆蟲標本，我們需要用堆疊平台來拍攝多張不同深度的照片，再將多張不同景深的照片透過 Helicon focus 堆疊軟體合成出一張清晰的影像，讓標本的每個部分都保持清晰。此堆疊平台選擇市面上的鋁擠材料與步進馬達自行組裝而成，鋁擠材料包括軸承滑塊、螺桿導軌、導軌光軸、滾珠軸承座等，其組裝容易且能透過樹莓派嵌入式平台控制單眼相機前後移動，其移動幅度可以透過程式參數來調整，以便於我們精準的找到標本前後清晰的範圍。 
+<img src="https://i.ibb.co/TLvT8JP/image.png" alt="image" border="0">
 
 ## 安裝
 
