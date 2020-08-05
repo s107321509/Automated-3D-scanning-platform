@@ -61,13 +61,13 @@ $ sudo apt-get install python2.7
 ```
 ps -aux|grep gphoto2
 ```
-<img src="https://i.ibb.co/nDzfN2C/01.jpg" alt="01" border="0">
+<img src="https://i.ibb.co/W6kMJyY/03.jpg" alt="03" border="0">
 
 - 移除舊的gphoto2程序 
 ```
 kill -9 <代碼>
 ```
-<img src="https://i.ibb.co/zSvB5vd/04.jpg" alt="04" border="0">
+<img src="https://i.ibb.co/YfCRFYP/04.jpg" alt="04" border="0">
 
 
 - 標本的拍攝過程大致可分為以下步驟：
