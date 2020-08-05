@@ -43,7 +43,7 @@
 ## 完整接線方式如下圖
 <img src="https://i.ibb.co/fGMJzcL/image.png" alt="image" border="0">
 
-## 安裝相依套建
+## 安裝相依套件
 
 - 該項目使用gphoto2來控制相機拍照。使用前請確保已安裝此套件。
 
