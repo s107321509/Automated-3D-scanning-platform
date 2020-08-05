@@ -45,32 +45,32 @@
 
 ## 安裝相依套建
 
-該項目使用gphoto2來控制相機拍照。使用前請確保已安裝此套件。
+- 該項目使用gphoto2來控制相機拍照。使用前請確保已安裝此套件。
 
 ```sh
 $ sudo apt-get install gphoto2
 ```
-使用前請確保安裝python2.7。
+- 使用前請確保安裝python2.7。
 
 ```sh
 $ sudo apt-get install python2.7
 ```
 
 ##  使用方法
-查看當前正在運行的gphoto2程序  
+- 查看當前正在運行的gphoto2程序  
 ```
 ps -aux|grep gphoto2
 ```
 <img src="https://i.ibb.co/nDzfN2C/01.jpg" alt="01" border="0">
 
-移除舊的gphoto2程序 
+- 移除舊的gphoto2程序 
 ```
 kill -9 <代碼>
 ```
-<img src="https://i.ibb.co/tqz4tZF/02.jpg" alt="02" border="0">
+<img src="https://i.ibb.co/zSvB5vd/04.jpg" alt="04" border="0">
 
 
-標本的拍攝過程大致可分為以下步驟：
+- 標本的拍攝過程大致可分為以下步驟：
 
 1.用戶可以在中定義任意數量的傾斜角度和水平旋轉的步數tilting.py，如下所示，定義為水平轉盤每轉拍攝40個環繞圖像，並且傾斜軸每次移動300微步，從不同角度分為三個拍攝。
 
