@@ -25,18 +25,18 @@ delay = 0.0001
 
 sum=0
 for x in range(len(tilting_step)):
-  for y in range(step_count[x]):
+  for y in range(tilting_step[x]):
     GPIO.output(STEP,GPIO.HIGH)
     sleep(delay)
     GPIO.output(STEP, GPIO.LOW)
     sleep(delay)
   
   #Tilt step accumulation
-  sum+=step_count[x]
+  sum+=tilting_step[x]
   sleep(2)
   
   #Pass the parameters into the panning.py
-  panning.horizontal_rotation(horizontal_step[x])
+  panning.horizontal_rotation(panning_step[x])
   sleep(1)
   DIR = 20
   STEP = 21
